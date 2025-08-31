@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+header, footer {
+  padding: 20px;
+  background: #007BFF;
+  color: white;
+  text-align: center;
+}
+header .controls {
+  margin-top: 10px;
+}
+button {
+  margin: 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  background: white;
+  color: #007BFF;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover {
+  background: #e0e0e0;
+}
+main {
+  flex: 1;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.card p {
+  padding: 10px;
+  text-align: center;
+}
+.dark {
+  background: #121212;
+  color: #eee;
+}
+.dark header, .dark footer {
+  background: #222;
+}
+.dark .card {
+  background: #1e1e1e;
+}
+.dark button {
+  background: #444;
+  color: white;
+}
+.dark button:hover {
+  background: #666;
+}
