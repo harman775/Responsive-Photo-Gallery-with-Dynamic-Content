@@ -1,10 +1,10 @@
 const images = [
-  { url: "images/pic1.jpeg", caption: "Mountain View", favorite: true },
-  { url: "images/pic2.jpeg", caption: "Golden Retriever", favorite: false },
-  { url: "images/pic3.jpeg", caption: "Forest Path", favorite: true },
-  { url: "images/pic4.jpeg", caption: "Sunny Beach", favorite: false },
-  { url: "images/pic5.jpeg", caption: "City Lights", favorite: true },
-  { url: "images/pic6.jpeg", caption: "Desert Dunes", favorite: false }
+  { url: "pic1.jpeg", caption: "Mountain View", favorite: true },
+  { url: "pic2.jpeg", caption: "Golden Retriever", favorite: false },
+  { url: "pic3.jpeg", caption: "Forest Path", favorite: true },
+  { url: "pic4.jpeg", caption: "Sunny Beach", favorite: false },
+  { url: "pic5.jpeg", caption: "City Lights", favorite: true },
+  { url: "pic6.jpeg", caption: "Desert Dunes", favorite: false }
 ];
 
 const gallery = document.getElementById("gallery");
