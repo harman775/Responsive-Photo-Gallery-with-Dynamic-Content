@@ -16,9 +16,7 @@ let showFavorites = false;
 function renderGallery() {
   gallery.innerHTML = "";
   let data = images;
-  if (showFavorites) {
-    data = images.filter(img => img.favorite === true);
-  }
+  if (showFavorites) data = images.filter(img => img.favorite === true);
   data.forEach(item => {
     const card = document.createElement("div");
     card.className = "card";
